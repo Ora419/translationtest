@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                
+
+
+    <meta charset="UTF-8">
+    <title>My 1st Mini Test</title>
+
+
+
+    <h3>Translation Test</h3>
+    Q1. Appple = ? <br>
+    <input type="radio" name="q1" id="ans1">梨子
+    <input type="radio" name="q1" id="ans2">蘋果
+    <input type="radio" name="q1" id="ans3">榴蓮
+    <button onclick="question1()">Submit</button>
+    <p id="result1">Correct! Wonderhoy! <img src="https://i.redd.it/kvxwxs89gqj81.png" width="20%"></p>
+
+    Q2. Pear = ? <br>
+    <input type="radio" name="q1" id="ans4">梨子
+    <input type="radio" name="q1" id="ans5">蘋果
+    <input type="radio" name="q1" id="ans6">榴蓮
+    <button onclick="question2()">Submit</button>
+    <p id="result2">oppps! <img src="https://cdn.cdnstep.com/dgXJdUMU69ZevWWkkfxj/cover-1.thumb256.png" width="20%"></p>
+
+    Q3. Durian = ? <br>
+    <input type="radio" name="q1" id="ans7">梨子
+    <input type="radio" name="q1" id="ans8">蘋果
+    <input type="radio" name="q1" id="ans9">榴蓮
+    <button onclick="question3()">Submit</button>
+    <p id="result3">Correct! Wonderhoy! <img src="https://i.redd.it/kvxwxs89gqj81.png" width="20%"></p>
+
+
+                <script>function question1(){
+    var ans1 = document.getElementById("ans1");
+    var ans2 = document.getElementById("ans2");
+    var ans3 = document.getElementById("ans3");
+
+    if (ans2.checked){
+        document.getElementById("result1").innerHTML = "Correct! Wonderhoy! <img src='https://i.redd.it/kvxwxs89gqj81.png' width='20%'>";
+    } else if(ans1.checked || ans3.checked){
+        document.getElementById("result1").innerHTML = "oppps! <img src='https://cdn.cdnstep.com/dgXJdUMU69ZevWWkkfxj/cover-1.thumb256.png' width='20%'>";
+    }
+}
+
+function question2(){
+    var ans4 = document.getElementById("ans4");
+    var ans5 = document.getElementById("ans5");
+    var ans6 = document.getElementById("ans6");
+
+    if (ans4.checked){
+        document.getElementById("result2").innerHTML = "Correct! Wonderhoy! <img src='https://i.redd.it/kvxwxs89gqj81.png' width='20%'>";
+    } else if(ans5.checked || ans6.checked){
+        document.getElementById("result2").innerHTML = "oppps! <img src='https://cdn.cdnstep.com/dgXJdUMU69ZevWWkkfxj/cover-1.thumb256.png' width='20%'>";
+    }
+}
+
+function question3(){
+    var ans7 = document.getElementById("ans7");
+    var ans8 = document.getElementById("ans8");
+    var ans9 = document.getElementById("ans9");
+
+    if (ans9.checked){
+        document.getElementById("result3").innerHTML = "Correct! Wonderhoy! <img src='https://i.redd.it/kvxwxs89gqj81.png' width='20%'>";
+    } else if(ans7.checked || ans8.checked){
+        document.getElementById("result3").innerHTML = "oppps! <img src='https://cdn.cdnstep.com/dgXJdUMU69ZevWWkkfxj/cover-1.thumb256.png' width='20%'>";
+    }
+}</script>
+            
+        
+    </body>
